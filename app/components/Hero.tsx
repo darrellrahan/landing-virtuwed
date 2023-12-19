@@ -10,7 +10,7 @@ function Hero() {
     >
       <div className="lg:bg-[url('/assets/hero-accent-lg.svg')] bg-cover relative">
         <div className="absolute bottom-0 inset-x-0 h-[300px] bg-[url('/assets/hero-accent-sm.svg')] lg:hidden bg-cover"></div>
-        <div className="relative mb-12 w-fit mx-auto lg:translate-y-44 lg:translate-x-24 -translate-y-20">
+        <div className="relative mb-12 w-fit mx-auto lg:translate-y-48 lg:translate-x-24 -translate-y-28">
           <Image
             src="/assets/hero-phone.svg"
             alt="wedding mockup"
