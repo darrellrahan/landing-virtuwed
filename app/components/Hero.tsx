@@ -7,7 +7,7 @@ function Hero() {
     <section id="hero" className="lg:h-screen lg:grid grid-cols-2">
       <div className="lg:bg-[url('/assets/hero-accent-lg.svg')] bg-cover relative h-screen flex items-center">
         <div className="absolute bottom-0 inset-x-0 h-[300px] bg-[url('/assets/hero-accent-sm.svg')] lg:hidden bg-cover"></div>
-        <div className="relative w-fit mx-auto lg:translate-x-24 translate-y-16">
+        <div className="relative w-fit mx-auto lg:translate-x-24 translate-y-8 lg:translate-y-16">
           <Image
             src="/assets/hero-phone.svg"
             alt="wedding mockup"
