@@ -6,11 +6,11 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="mt-28 py-8 lg:py-0 lg:h-screen lg:mt-0 lg:grid grid-cols-2"
+      className="mt-28 py-16 lg:py-0 lg:h-screen lg:mt-0 lg:grid grid-cols-2"
     >
       <div className="lg:bg-[url('/assets/hero-accent-lg.svg')] bg-cover relative">
         <div className="absolute bottom-0 inset-x-0 h-[300px] bg-[url('/assets/hero-accent-sm.svg')] lg:hidden bg-cover"></div>
-        <div className="relative mb-12 w-fit mx-auto lg:translate-y-48 lg:translate-x-24 -translate-y-8">
+        <div className="relative mb-12 w-fit mx-auto lg:translate-y-44 lg:translate-x-24 -translate-y-8">
           <Image
             src="/assets/hero-phone.svg"
             alt="wedding mockup"
