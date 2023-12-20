@@ -32,7 +32,7 @@ function Hero() {
       <div className="order-first lg:flex items-center mx-6 lg:mx-12 my-12">
         <div className="space-y-6">
           <h3
-            className={`${lora.className} text-4xl lg:text-6xl lg:leading-tight font-semibold`}
+            className={`${lora.className} text-4xl lg:text-6xl leading-snug lg:leading-[1.2] font-semibold`}
           >
             Virtual
             <br />
