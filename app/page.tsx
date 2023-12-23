@@ -1,5 +1,6 @@
 import Award from "./components/Award";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 import GeneralFeatures from "./components/GeneralFeatures";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimonial />
       <Video />
       <Faq />
+      <Footer />
     </>
   );
 }
