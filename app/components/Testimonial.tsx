@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { lora } from "../fonts";
+import { Fade } from "react-awesome-reveal";
 
 function Testimonial() {
   const SLIDER_DATA = [
@@ -45,17 +46,19 @@ function Testimonial() {
       id="testimonial"
       className="py-16 bg-[#F66F6F] lg:flex items-center gap-32 lg:px-12"
     >
-      <div className="mb-16 lg:w-[370px] text-center lg:text-left">
-        <h1
-          className={`text-white ${lora.className} text-4xl font-semibold mb-6 leading-snug`}
-        >
-          What people think about us
-        </h1>
-        <p className="text-[#FFFFF080] text-lg px-6 lg:px-0">
-          We prioritize enhancing customer experience, consistently delivering
-          exceptional service and satisfaction.
-        </p>
-      </div>
+      <Fade direction="left">
+        <div className="mb-16 lg:w-[370px] text-center lg:text-left">
+          <h1
+            className={`text-white ${lora.className} text-4xl font-semibold mb-6 leading-snug`}
+          >
+            What people think about us
+          </h1>
+          <p className="text-[#FFFFF080] text-lg px-6 lg:px-0">
+            We prioritize enhancing customer experience, consistently delivering
+            exceptional service and satisfaction.
+          </p>
+        </div>
+      </Fade>
       <div className="lg:w-[900px]">
         <div className="flex items-center relative overflow-hidden h-[430px] mb-12">
           {SLIDER_DATA.map((data: any, index: any) => {
