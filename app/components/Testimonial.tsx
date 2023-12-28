@@ -30,6 +30,87 @@ function Testimonial() {
     },
   ];
 
+  const SLIDER_DATA_DESKTOP = [
+    {
+      id: 1,
+      contents: [
+        {
+          img: "/assets/testimonial-1.svg",
+          quote:
+            "Highly recommended for anyone looking to host a memorable virtual wedding.",
+          person: "Yoriko",
+          people: "Agy & Yoriko",
+        },
+        {
+          img: "/assets/testimonial-2.svg",
+          quote:
+            "The virtual experience felt truly incridible, and charming to our special day.",
+          person: "Fajar",
+          people: "Fajar & Tiara",
+        },
+        {
+          img: "/assets/testimonial-3.svg",
+          quote:
+            "The 360 Virtual Room feature added a unique touch, making our special day truly unforgettable.",
+          person: "Junghwan",
+          people: "Junghwan & Pamella",
+        },
+      ],
+    },
+    {
+      id: 2,
+      contents: [
+        {
+          img: "/assets/testimonial-2.svg",
+          quote:
+            "The virtual experience felt truly incridible, and charming to our special day.",
+          person: "Fajar",
+          people: "Fajar & Tiara",
+        },
+        {
+          img: "/assets/testimonial-1.svg",
+          quote:
+            "Highly recommended for anyone looking to host a memorable virtual wedding.",
+          person: "Yoriko",
+          people: "Agy & Yoriko",
+        },
+        {
+          img: "/assets/testimonial-3.svg",
+          quote:
+            "The 360 Virtual Room feature added a unique touch, making our special day truly unforgettable.",
+          person: "Junghwan",
+          people: "Junghwan & Pamella",
+        },
+      ],
+    },
+    {
+      id: 3,
+      contents: [
+        {
+          img: "/assets/testimonial-3.svg",
+          quote:
+            "The 360 Virtual Room feature added a unique touch, making our special day truly unforgettable.",
+          person: "Junghwan",
+          people: "Junghwan & Pamella",
+        },
+        {
+          img: "/assets/testimonial-2.svg",
+          quote:
+            "The virtual experience felt truly incridible, and charming to our special day.",
+          person: "Fajar",
+          people: "Fajar & Tiara",
+        },
+        {
+          img: "/assets/testimonial-1.svg",
+          quote:
+            "Highly recommended for anyone looking to host a memorable virtual wedding.",
+          person: "Yoriko",
+          people: "Agy & Yoriko",
+        },
+      ],
+    },
+  ];
+
   const maxIndex = SLIDER_DATA.length - 1;
 
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -61,6 +142,49 @@ function Testimonial() {
       </Fade>
       <div className="lg:w-[900px]">
         <div className="flex items-center relative overflow-hidden h-[430px] mb-12">
+          {SLIDER_DATA_DESKTOP.map((data, index) => {
+            let className = "translate-x-full opacity-0";
+
+            if (index === carouselIndex) {
+              className = "translate-x-0 opacity-100";
+            }
+            if (
+              index === carouselIndex - 1 ||
+              (index === maxIndex && carouselIndex === 0)
+            ) {
+              className = "-translate-x-full opacity-0";
+            }
+
+            return (
+              <div
+                key={data.id}
+                className={`hidden lg:grid absolute inset-0 ${className} grid-cols-3 gap-8 duration-300 ease-linear`}
+              >
+                {data.contents.map((content) => (
+                  <div key={content.person}>
+                    <Image
+                      src={content.img}
+                      alt={content.person}
+                      width={280}
+                      height={180}
+                      className="rounded-t-[0.625rem] w-full"
+                    />
+                    <div className="p-6 bg-[#FFF8EF] rounded-b-[0.625rem] h-[250px] flex flex-col justify-between">
+                      <p className="text-lg font-medium">{content.quote}</p>
+                      <div>
+                        <h3 className="text-3xl font-semibold mb-2">
+                          {content.person}
+                        </h3>
+                        <h4 className="text-[#F66F6F] font-medium">
+                          {content.people}
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          })}
           {SLIDER_DATA.map((data: any, index: any) => {
             let className = "translate-x-[110%]";
 
@@ -77,7 +201,7 @@ function Testimonial() {
             return (
               <div
                 key={data.person}
-                className={`${className} absolute inset-0 duration-[0.4s] ease-linear w-[280px] mx-auto`}
+                className={`${className} absolute inset-0 duration-[0.4s] ease-linear w-[280px] mx-auto lg:hidden`}
               >
                 <Image
                   src={data.img}
