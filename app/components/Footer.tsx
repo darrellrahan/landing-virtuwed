@@ -9,13 +9,21 @@ function Footer() {
       className="bg-[#F66F6F] px-6 lg:px-28 py-16 lg:pt-24 lg:pb-8 text-white"
     >
       <div className="lg:flex justify-between items-start mb-16 lg:mb-24">
-        <Image
-          src="/assets/logo-footer.svg"
-          alt="virtuwed"
-          width={280}
-          height={60}
-          className="mx-auto lg:mx-0 lg:translate-y-8 mb-20 lg:mb-0"
-        />
+        <div
+          className={`mb-20 lg:mb-0 flex flex-col lg:flex-row items-center gap-2 lg:gap-4 ${lora.className}`}
+        >
+          <Image
+            priority={true}
+            src="/assets/logo-white.svg"
+            alt="logo"
+            width={100}
+            height={40}
+          />
+          <div className="mt-4 text-center lg:text-left lg:mt-0">
+            <h4 className="text-3xl font-thin mb-2">VIRTUWED</h4>
+            <h4 className="text-xl">PT. Virtuwed Digital Indonesia</h4>
+          </div>
+        </div>
         <div className="space-y-16 lg:space-y-0 lg:flex gap-24">
           <div className="flex flex-col items-center lg:items-baseline gap-4 text-lg">
             <h3 className={`text-2xl font-semibold ${lora.className}`}>

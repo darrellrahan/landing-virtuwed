@@ -10,6 +10,7 @@ function Award() {
     >
       <div className="flex justify-between items-center gap-4">
         <Image
+          priority={true}
           src="/assets/award-left.svg"
           alt="award"
           width={60}
@@ -22,6 +23,7 @@ function Award() {
           [Hong Kong]
         </p>
         <Image
+          priority={true}
           src="/assets/award-right.svg"
           alt="award"
           width={60}
@@ -30,6 +32,7 @@ function Award() {
       </div>
       <div className="lg:flex justify-between items-center gap-4 hidden">
         <Image
+          priority={true}
           src="/assets/award-left.svg"
           alt="award"
           width={60}
@@ -42,6 +45,7 @@ function Award() {
           [Hong Kong]
         </p>
         <Image
+          priority={true}
           src="/assets/award-right.svg"
           alt="award"
           width={60}
@@ -50,6 +54,7 @@ function Award() {
       </div>
       <div className="lg:flex justify-between items-center gap-4 hidden">
         <Image
+          priority={true}
           src="/assets/award-left.svg"
           alt="award"
           width={60}
@@ -62,6 +67,7 @@ function Award() {
           [Hong Kong]
         </p>
         <Image
+          priority={true}
           src="/assets/award-right.svg"
           alt="award"
           width={60}

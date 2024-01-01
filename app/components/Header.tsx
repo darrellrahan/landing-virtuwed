@@ -30,7 +30,13 @@ function Header() {
       id="header"
       className={`${style} px-6 lg:px-12 fixed inset-x-0 top-0 z-[999] bg-white flex items-center justify-between duration-300 ease-linear`}
     >
-      <Image src="/assets/logo.svg" alt="logo" width={70} height={40} />
+      <Image
+        priority={true}
+        src="/assets/logo.svg"
+        alt="logo"
+        width={70}
+        height={40}
+      />
       <div className="hidden lg:flex gap-8 text-lg font-medium">
         <Link href="/">Home</Link>
         <Link href="/">Portofolio</Link>

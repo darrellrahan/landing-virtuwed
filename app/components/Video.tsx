@@ -27,6 +27,7 @@ function Video() {
           <div className="flex items-center justify-center h-[270px] lg:h-[500px] bg-[url('/assets/video-thumbnail.svg')] bg-cover bg-center rounded-[10px]">
             <button onClick={() => setVideoModal(true)}>
               <Image
+                priority={true}
                 src="/assets/play-video.svg"
                 alt="play video"
                 width={90}
@@ -37,6 +38,7 @@ function Video() {
         </Fade>
       </div>
       <Image
+        priority={true}
         src="/assets/video-line.svg"
         alt="line"
         width={750}
@@ -44,6 +46,7 @@ function Video() {
         className="absolute bottom-0 lg:hidden"
       />
       <Image
+        priority={true}
         src="/assets/video-line-lg.svg"
         alt="line"
         width={1500}

@@ -17,7 +17,13 @@ function MobileNavbar() {
       } z-[9999] transition-all duration-300 ease-linear px-6 py-8`}
     >
       <div className="flex justify-between items-center mb-16">
-        <Image src="/assets/logo.svg" alt="logo" width={70} height={40} />
+        <Image
+          priority={true}
+          src="/assets/logo.svg"
+          alt="logo"
+          width={70}
+          height={40}
+        />
         <button onClick={() => setMobileNavbar(false)}>
           <X size={40} />
         </button>

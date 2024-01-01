@@ -17,6 +17,7 @@ function Hero() {
         <div className="absolute bottom-0 inset-x-0 h-[300px] bg-[url('/assets/hero-accent-sm.svg')] lg:hidden bg-cover"></div>
         <div className="relative w-fit mx-auto lg:translate-x-24 lg:translate-y-16">
           <Image
+            priority={true}
             src="/assets/hero-phone.svg"
             alt="wedding mockup"
             width={260}
@@ -27,6 +28,7 @@ function Hero() {
             className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px]"
           >
             <Image
+              priority={true}
               src="/assets/play-video.svg"
               alt="wedding mockup"
               width={120}
@@ -35,6 +37,7 @@ function Hero() {
             />
           </button>
           <Image
+            priority={true}
             src="/assets/mockup-frame.svg"
             alt="wedding mockup"
             width={260}

@@ -25,6 +25,7 @@ function GeneralFeatures() {
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:mx-40 lg:gap-16 gap-24">
           <div className="border border-[rgba(124,124,124,0.30)] rounded-[0.625rem] bg-white/50 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-6 h-[300px] relative flex items-center">
             <Image
+              priority={true}
               src="/assets/gf-1.svg"
               alt="Premium Digital Invitation"
               width={100}
@@ -44,6 +45,7 @@ function GeneralFeatures() {
           </div>
           <div className="border border-[rgba(124,124,124,0.30)] rounded-[0.625rem] bg-white/50 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-6 h-[300px] relative flex items-center">
             <Image
+              priority={true}
               src="/assets/gf-2.svg"
               alt="360° Virtual Reception"
               width={100}
@@ -63,6 +65,7 @@ function GeneralFeatures() {
           </div>
           <div className="border border-[rgba(124,124,124,0.30)] rounded-[0.625rem] bg-white/50 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-6 h-[300px] relative flex items-center">
             <Image
+              priority={true}
               src="/assets/gf-3.svg"
               alt=" 360° Virtual Memories"
               width={100}

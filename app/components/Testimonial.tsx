@@ -163,6 +163,7 @@ function Testimonial() {
                 {data.contents.map((content) => (
                   <div key={content.person}>
                     <Image
+                      priority={true}
                       src={content.img}
                       alt={content.person}
                       width={280}
@@ -204,6 +205,7 @@ function Testimonial() {
                 className={`${className} absolute inset-0 duration-[0.4s] ease-linear w-[280px] mx-auto lg:hidden`}
               >
                 <Image
+                  priority={true}
                   src={data.img}
                   alt={data.person}
                   width={280}
@@ -229,6 +231,7 @@ function Testimonial() {
           <div className="flex gap-2">
             <button onClick={prevSlide}>
               <Image
+                priority={true}
                 src="/assets/btn-prev.svg"
                 alt="prev"
                 width={40}
@@ -237,6 +240,7 @@ function Testimonial() {
             </button>
             <button onClick={nextSlide} className="hidden lg:inline-block">
               <Image
+                priority={true}
                 src="/assets/btn-next.svg"
                 alt="next"
                 width={40}
@@ -257,6 +261,7 @@ function Testimonial() {
           </div>
           <button onClick={nextSlide} className="lg:hidden">
             <Image
+              priority={true}
               src="/assets/btn-next.svg"
               alt="next"
               width={40}

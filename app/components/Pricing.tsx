@@ -30,6 +30,7 @@ function Pricing() {
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -39,6 +40,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -48,6 +50,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -57,6 +60,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -79,6 +83,7 @@ function Pricing() {
             <div className="space-y-4 lg:space-y-0 lg:grid grid-cols-2 gap-4">
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -88,6 +93,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -97,6 +103,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -106,6 +113,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -115,6 +123,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -124,6 +133,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -133,6 +143,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
@@ -142,6 +153,7 @@ function Pricing() {
               </div>
               <div className="flex items-center gap-4">
                 <Image
+                  priority={true}
                   src="/assets/tick-pricing.svg"
                   alt="benefit"
                   width={24}
