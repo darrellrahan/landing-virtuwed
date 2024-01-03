@@ -5,10 +5,17 @@ import React, { useEffect, useState } from "react";
 import { List } from "@phosphor-icons/react";
 import { useTogglerContext } from "../context/toggler";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-function Header() {
+function Header({ dict, lang }: { dict: string[]; lang: string }) {
   const { setMobileNavbar } = useTogglerContext();
   const [style, setStyle] = useState("py-8");
+  const { push } = useRouter();
+  const [selectedLang, setSelectedLang] = useState(lang);
+
+  useEffect(() => {
+    push(`/${selectedLang}`);
+  }, [selectedLang]);
 
   useEffect(() => {
     const onPageScroll = () => {
@@ -38,10 +45,21 @@ function Header() {
         height={40}
       />
       <div className="hidden lg:flex gap-8 text-lg font-medium">
-        <Link href="/">Home</Link>
-        <Link href="/">Portofolio</Link>
-        <Link href="/">Theme</Link>
-        <Link href="/">Blog</Link>
+        {dict.map((data) => (
+          <Link key={data} className="capitalize" href="/">
+            {data}
+          </Link>
+        ))}
+        <select
+          value={selectedLang}
+          onChange={(e) => {
+            setSelectedLang(e.target.value);
+          }}
+          className="bg-transparent w-12 cursor-pointer border-none outline-none"
+        >
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
       </div>
       <button className="lg:hidden" onClick={() => setMobileNavbar(true)}>
         <List size={40} />
