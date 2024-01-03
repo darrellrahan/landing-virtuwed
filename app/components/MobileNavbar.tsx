@@ -41,7 +41,6 @@ function MobileNavbar({ dict, lang }: { dict: string[]; lang: string }) {
             <button
               onClick={() => {
                 setSelectedLang("id");
-                setMobileNavbar(false);
               }}
               className="flex items-center gap-4"
             >
@@ -64,7 +63,6 @@ function MobileNavbar({ dict, lang }: { dict: string[]; lang: string }) {
             <button
               onClick={() => {
                 setSelectedLang("en");
-                setMobileNavbar(false);
               }}
               className="flex items-center gap-4"
             >
