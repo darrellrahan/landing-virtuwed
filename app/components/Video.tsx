@@ -7,7 +7,7 @@ import { lora } from "../fonts";
 import VideoModal from "./VideoModal";
 import { Fade } from "react-awesome-reveal";
 
-function Video() {
+function Video({ dict }: { dict: string }) {
   const { setVideoModal } = useTogglerContext();
 
   return (
@@ -18,9 +18,7 @@ function Video() {
           <h1
             className={`text-center text-3xl font-semibold ${lora.className} mb-16`}
           >
-            Explore our comprehensive guide for beginners{" "}
-            <br className="hidden lg:inline-block" /> on navigating our virtual
-            wedding platform
+            {dict}
           </h1>
         </Fade>
         <Fade direction="up">

@@ -5,19 +5,28 @@ import React from "react";
 import { lora } from "../fonts";
 import { Fade } from "react-awesome-reveal";
 
-function Pricing() {
+function Pricing({
+  dict,
+}: {
+  dict: {
+    heading: string;
+    subheading: string;
+    lite: string[];
+    priority: string[];
+  };
+}) {
   return (
     <section id="pricing" className="px-6 lg:px-28 py-40">
       <Fade direction="down">
         <h1
           className={`text-center text-3xl leading-snug font-semibold ${lora.className} mb-4`}
         >
-          Pricing Plans
+          {dict.heading}
         </h1>
       </Fade>
       <Fade direction="up">
         <p className="text-[#7C7C7C] font-medium text-lg text-center mb-16 lg:mb-20">
-          Customize your wedding journey with pricing plans that suit you best.
+          {dict.subheading}
         </p>
       </Fade>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6">

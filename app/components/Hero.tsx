@@ -7,7 +7,11 @@ import { lora } from "../fonts";
 import VideoModal from "./VideoModal";
 import { Fade } from "react-awesome-reveal";
 
-function Hero() {
+function Hero({
+  dict,
+}: {
+  dict: { heading: string; subheading: string; button: string; video: string };
+}) {
   const { setVideoModal } = useTogglerContext();
 
   return (
@@ -56,17 +60,15 @@ function Hero() {
         <Fade direction="left">
           <div className="space-y-6">
             <h3
-              className={`${lora.className} text-4xl lg:text-6xl leading-snug lg:leading-[1.2] font-semibold`}
+              className={`${lora.className} text-3xl lg:text-[2.5rem] leading-snug lg:leading-[1.2] font-semibold`}
             >
-              Virtual
-              <br />
-              Wedding Platform
+              {dict.heading}
             </h3>
             <p className="text-[#7C7C7C] font-medium text-lg">
-              Make your luxurious and elegant wedding a reality, virtually.
+              {dict.subheading}
             </p>
             <button className="text-lg py-2 px-3 text-white bg-[#F66F6F] rounded-md">
-              Get started
+              {dict.button}
             </button>
           </div>
         </Fade>

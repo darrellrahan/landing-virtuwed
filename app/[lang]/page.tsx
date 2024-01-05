@@ -11,6 +11,44 @@ import Testimonial from "../components/Testimonial";
 import Video from "../components/Video";
 import { getDictionary } from "../dictionaries";
 
+interface Dictionary {
+  header: string[];
+  hero: {
+    heading: string;
+    subheading: string;
+    button: string;
+    video: string;
+  };
+  award: string;
+  feature: {
+    heading: string;
+    subheading: string;
+    features: {
+      title: string;
+      body: string;
+    }[];
+  };
+  value: {
+    title: string;
+    body: string;
+  }[];
+  pricing: {
+    heading: string;
+    subheading: string;
+    lite: string[];
+    priority: string[];
+  };
+  review: {
+    heading: string;
+    subheading: string;
+  };
+  video: string;
+  faq: {
+    question: string;
+    answer: string;
+  }[];
+}
+
 export default async function Home({ params }: { params: { lang: string } }) {
   const dict = await getDictionary(params.lang);
 
@@ -18,14 +56,14 @@ export default async function Home({ params }: { params: { lang: string } }) {
     <>
       <Header dict={dict.header} lang={params.lang} />
       <MobileNavbar dict={dict.header} lang={params.lang} />
-      <Hero />
-      <Award />
-      <GeneralFeatures />
-      <SpecificFeatures />
-      <Pricing />
-      <Testimonial />
-      <Video />
-      <Faq />
+      <Hero dict={dict.hero} />
+      <Award dict={dict.award} />
+      <GeneralFeatures dict={dict.feature} />
+      <SpecificFeatures dict={dict.value} />
+      <Pricing dict={dict.pricing} />
+      <Testimonial dict={dict.review} />
+      <Video dict={dict.video} />
+      <Faq dict={dict.faq} />
       <Footer />
     </>
   );

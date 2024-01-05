@@ -5,7 +5,14 @@ import React, { useState } from "react";
 import { lora } from "../fonts";
 import { Fade } from "react-awesome-reveal";
 
-function Testimonial() {
+function Testimonial({
+  dict,
+}: {
+  dict: {
+    heading: string;
+    subheading: string;
+  };
+}) {
   const SLIDER_DATA = [
     {
       img: "/assets/testimonial-1.svg",
@@ -132,11 +139,10 @@ function Testimonial() {
           <h1
             className={`text-white ${lora.className} text-4xl font-semibold mb-6 leading-snug`}
           >
-            What people think about us
+            {dict.heading}
           </h1>
           <p className="text-[#FFFFF080] text-lg px-6 lg:px-0">
-            We prioritize enhancing customer experience, consistently delivering
-            exceptional service and satisfaction.
+            {dict.subheading}
           </p>
         </div>
       </Fade>

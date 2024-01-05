@@ -6,36 +6,14 @@ import React from "react";
 import { useTogglerContext } from "../context/toggler";
 import { lora } from "../fonts";
 
-function Faq() {
-  const QUESTIONS = [
-    {
-      question: "What is Virtuwed?",
-      answer:
-        "Main features include digital invitations, souvenir delivery, virtual welcome, wedding photo gallery, video calls, and live wedding streaming.",
-    },
-    {
-      question: "What are the main features of virtuwed?",
-      answer:
-        "Main features include digital invitations, souvenir delivery, virtual welcome, wedding photo gallery, video calls, and live wedding streaming.",
-    },
-    {
-      question: "What packages does Virtuwed provide?",
-      answer:
-        "Main features include digital invitations, souvenir delivery, virtual welcome, wedding photo gallery, video calls, and live wedding streaming.",
-    },
-    {
-      question:
-        "Are there any additional charges for adding guests to Virtuwed Premium?",
-      answer:
-        "Main features include digital invitations, souvenir delivery, virtual welcome, wedding photo gallery, video calls, and live wedding streaming.",
-    },
-    {
-      question: "Why virtuwed is an option for weddings?",
-      answer:
-        "Main features include digital invitations, souvenir delivery, virtual welcome, wedding photo gallery, video calls, and live wedding streaming.",
-    },
-  ];
-
+function Faq({
+  dict,
+}: {
+  dict: {
+    question: string;
+    answer: string;
+  }[];
+}) {
   const { showAnswer, setShowAnswer } = useTogglerContext();
 
   function getParams(id: number): {
@@ -118,7 +96,7 @@ function Faq() {
         </h1>
       </Fade>
       <Fade direction="up">
-        {QUESTIONS.map((data, index) => (
+        {dict.map((data, index) => (
           <div
             key={data.question}
             className="border-b-2 border-black py-6 lg:py-8 text-xl font-semibold text-left"
@@ -136,7 +114,7 @@ function Faq() {
             <div
               className={`${
                 getState(index + 1)
-                  ? "max-h-[10rem] lg:max-h-[5rem] pt-6"
+                  ? "max-h-[11rem] lg:max-h-[5rem] pt-6"
                   : "max-h-0 pt-0"
               } transiion-all duration-300 ease-linear overflow-hidden flex gap-8 text-base font-normal`}
             >

@@ -5,7 +5,14 @@ import React from "react";
 import { lora } from "../fonts";
 import { Fade } from "react-awesome-reveal";
 
-function SpecificFeatures() {
+function SpecificFeatures({
+  dict,
+}: {
+  dict: {
+    title: string;
+    body: string;
+  }[];
+}) {
   return (
     <section id="specific-features" className="px-6 py-32 lg:py-24 relative">
       <div className="absolute bottom-0 inset-x-0 h-[220px] lg:h-[380px] bg-[url('/assets/sf-wave.svg')] lg:bg-[url('/assets/sf-wave-lg.svg')] bg-cover bg-no-repeat"></div>
@@ -34,13 +41,10 @@ function SpecificFeatures() {
               <h1
                 className={`text-center lg:text-left text-3xl lg:text-4xl leading-snug font-semibold ${lora.className} mb-6 lg:leading-snug`}
               >
-                Integrate your Wedding with our Best Features
+                {dict[0].title}
               </h1>
               <p className="text-[#7C7C7C] font-medium text-lg">
-                With our seamlessly integrated features, personalize your
-                virtual wedding experience effortlessly, ensuring a
-                user-friendly platform and a delightful celebration for all
-                participants.
+                {dict[0].body}
               </p>
             </div>
           </div>
@@ -49,13 +53,10 @@ function SpecificFeatures() {
               <h1
                 className={`text-center lg:text-left text-3xl lg:text-4xl leading-snug font-semibold ${lora.className} mb-6 lg:leading-snug`}
               >
-                Integrate your Wedding with our Best Features
+                {dict[1].title}
               </h1>
               <p className="text-[#7C7C7C] font-medium text-lg">
-                With our seamlessly integrated features, personalize your
-                virtual wedding experience effortlessly, ensuring a
-                user-friendly platform and a delightful celebration for all
-                participants.
+                {dict[1].body}
               </p>
             </div>
           </div>
@@ -64,13 +65,10 @@ function SpecificFeatures() {
               <h1
                 className={`text-center lg:text-left text-3xl lg:text-4xl leading-snug font-semibold ${lora.className} mb-6 lg:leading-snug`}
               >
-                Integrate your Wedding with our Best Features
+                {dict[2].title}
               </h1>
               <p className="text-[#7C7C7C] font-medium text-lg">
-                With our seamlessly integrated features, personalize your
-                virtual wedding experience effortlessly, ensuring a
-                user-friendly platform and a delightful celebration for all
-                participants.
+                {dict[2].body}
               </p>
             </div>
           </div>

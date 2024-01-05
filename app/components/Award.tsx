@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { lora } from "../fonts";
 
-function Award() {
+function Award({ dict }: { dict: string }) {
   return (
     <section
       id="award"
@@ -16,11 +16,8 @@ function Award() {
           width={60}
           height={100}
         />
-        <p className={`${lora.className} text-[#D2BB65] text-lg`}>
-          <span className="font-bold">Nominated as Startup Of The Year</span>,
-          Asia Pacific ICT Awards, APICTA 2023
-          <br />
-          [Hong Kong]
+        <p className={`${lora.className} text-[#D2BB65] text-lg font-bold`}>
+          {dict}
         </p>
         <Image
           priority={true}
@@ -38,11 +35,8 @@ function Award() {
           width={60}
           height={100}
         />
-        <p className={`${lora.className} text-[#D2BB65] text-lg`}>
-          <span className="font-bold">Nominated as Startup Of The Year</span>,
-          Asia Pacific ICT Awards, APICTA 2023
-          <br />
-          [Hong Kong]
+        <p className={`${lora.className} text-[#D2BB65] text-lg font-bold`}>
+          {dict}
         </p>
         <Image
           priority={true}
@@ -60,11 +54,8 @@ function Award() {
           width={60}
           height={100}
         />
-        <p className={`${lora.className} text-[#D2BB65] text-lg`}>
-          <span className="font-bold">Nominated as Startup Of The Year</span>,
-          Asia Pacific ICT Awards, APICTA 2023
-          <br />
-          [Hong Kong]
+        <p className={`${lora.className} text-[#D2BB65] text-lg font-bold`}>
+          {dict}
         </p>
         <Image
           priority={true}

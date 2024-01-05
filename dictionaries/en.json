@@ -1,3 +1,99 @@
 {
-  "header": ["home", "portfolio", "theme", "blog"]
+  "header": ["home", "portfolio", "theme", "blog"],
+  "hero": {
+    "heading": "Inviting 100, 1000, 10 thousand guests? Possible with Virtuwed!",
+    "subheading": "A wedding platform that makes your celebration accessible anytime, anywhere, with unlimited guest capacity.",
+    "button": "Get started",
+    "video": "Play Video"
+  },
+  "award": "Nominated as Startup Of The Year, Asia Pacific ICT Awards, APICTA 2023 [Hong Kong]",
+  "feature": {
+    "heading": "Virtuwed is the first virtual wedding platform in Indonesia with the most complete features",
+    "subheading": "Bring your wedding experience into the virtual world",
+    "features": [
+      {
+        "title": "Premium Digital Invitations",
+        "body": "Send your Digital Invitations Exclusively, Safely and Reliably"
+      },
+      {
+        "title": "360-Degree Virtual Reception",
+        "body": "Host a wedding, anytime, anywhere"
+      },
+      {
+        "title": "360-Degree Virtual Memories",
+        "body": "View unforgettable memories at anytime, accessible at anytime"
+      }
+    ]
+  },
+  "value": [
+    {
+      "title": "Virtuwed: Expanding Your Wedding's Reach Easily and Affordably",
+      "body": "Bid farewell to weddings limited by cost, distance, and time. Virtuwed expands virtual guest capacity, accessible from anywhere, and at an affordable cost."
+    },
+    {
+      "title": "Exclusive Digital Invitations, Sent Securely",
+      "body": "Worried about digital invitation scams? With Virtuwed, we ensure the secure delivery of your exclusive digital invitations through our official WhatsApp."
+    },
+    {
+      "title": "Celebrate Your Wedding Anytime, Anywhere, with Any Number of Guests",
+      "body": "Our platform can host hybrid weddings (Live and Virtual) with 360-degree Live Streaming, ensuring guests can feel the atmosphere of your wedding from wherever they are!"
+    },
+    {
+      "title": "Receive Digital Gifts from Invited Guests",
+      "body": "Guests can choose and send symbolic household items as wedding gifts to you. We then convert the value of these items into funds deposited into your account."
+    },
+    {
+      "title": "View and Preserve Unforgettable 360-Degree Wedding Moments",
+      "body": "Our Virtual Memories capture 360-degree photos and videos of the ceremony, blessings, and reception. Relive every moment without constraints from your photographer's camera angles."
+    }
+  ],
+  "pricing": {
+    "heading": "Pricing Plans",
+    "subheading": "Customize your wedding journey with pricing plans that suit you best.",
+    "lite": [
+      "Digital Invitations for 200 Guests, Sent via Virtuwed's Official Account",
+      "Premium Design",
+      "360-Degree Virtual Reception",
+      "360-Degree Virtual Memories",
+      "Digital Gifts",
+      "1-Year Access"
+    ],
+    "priority": [
+      "Digital Invitations for 500 Guests, Sent via Virtuwed's Official Account",
+      "Custom Design",
+      "360-Degree Virtual Reception",
+      "360-Degree Virtual Memories",
+      "Digital Gifts",
+      "360-Degree Live Streaming Wedding ([Click for Demo](#))",
+      "360-Degree Photo & Video Documentation ([Click for Demo](#))",
+      "Lifetime Access"
+    ]
+  },
+  "review": {
+    "heading": "What people think about us",
+    "subheading": "We prioritize enhancing customer experience, consistently delivering exceptional service and satisfaction."
+  },
+  "video": "Explore our comprehensive guide for beginners on navigating our virtual wedding platform",
+  "faq": [
+    {
+      "question": "What is Virtuwed?",
+      "answer": "Virtuwed is a virtual wedding platform featuring digital invitations, a 360 platform, photo gallery, video call, live streaming, and more."
+    },
+    {
+      "question": "What are the key features offered by Virtuwed?",
+      "answer": "Key features include digital invitations, digital gifts, virtual reception, wedding photo gallery, video call, and wedding live streaming."
+    },
+    {
+      "question": "What packages does Virtuwed offer?",
+      "answer": "There are 2 packages: VIRTUWED Premium (2 Million Rupiah) for intimate weddings, and VIRTUWED Priority (10 Million Rupiah) with more professional services."
+    },
+    {
+      "question": "Is there an additional cost for adding guests to VIRTUWED Premium?",
+      "answer": "Yes, adding 100 guests incurs an additional fee of Rp.50,000."
+    },
+    {
+      "question": "Why choose Virtuwed for your wedding?",
+      "answer": "Virtuwed provides an economical and innovative solution to create an unforgettable wedding with affordable costs and accessibility from anywhere."
+    }
+  ]
 }

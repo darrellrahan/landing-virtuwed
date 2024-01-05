@@ -2,6 +2,40 @@ import "server-only";
 
 interface Dictionary {
   header: string[];
+  hero: {
+    heading: string;
+    subheading: string;
+    button: string;
+    video: string;
+  };
+  award: string;
+  feature: {
+    heading: string;
+    subheading: string;
+    features: {
+      title: string;
+      body: string;
+    }[];
+  };
+  value: {
+    title: string;
+    body: string;
+  }[];
+  pricing: {
+    heading: string;
+    subheading: string;
+    lite: string[];
+    priority: string[];
+  };
+  review: {
+    heading: string;
+    subheading: string;
+  };
+  video: string;
+  faq: {
+    question: string;
+    answer: string;
+  }[];
 }
 
 const dictionaries: Record<string, () => Promise<Dictionary>> = {
