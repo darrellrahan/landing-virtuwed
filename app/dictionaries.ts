@@ -26,6 +26,7 @@ interface Dictionary {
     subheading: string;
     lite: string[];
     priority: string[];
+    addons: string[];
   };
   review: {
     heading: string;
